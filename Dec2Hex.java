@@ -23,12 +23,15 @@ public static int Arg1;
 
         while(num != 0)
         
-            rem=num%16;
+            int rem=num%16;
             hexadecimal= ch[rem] + hexadecimal;
             num= num/16;
         }
 
         System.out.println("Hexadecimal representation is: " + hexadecimal);
-
+	
+	} catch (NumberFormatException e) {
+            System.out.println("Error: Invalid input. Please enter a valid integer.");
+        }
     }
 }
