@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 //This is a test comment
+//test number 2
 
 class Dec2Hex
 {
