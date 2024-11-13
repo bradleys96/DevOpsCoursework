@@ -6,6 +6,13 @@ class Dec2Hex
 {
 public static int Arg1;
     public static void main(String args[])    {
+
+	// Check if an argument was provided
+        if (args.length == 0) {
+            System.out.println("Error: No input provided. Please enter an integer.");
+            return; // Exit program if no input
+        }
+
         Arg1 = Integer.parseInt(args[0]);
         char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
         int rem, num;
